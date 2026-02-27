@@ -48,7 +48,7 @@ Incremented when:
 
 ## Addon Alignment
 
-Official `ss-keel-*-addon` addons should:
+Official `ss-keel-addon-*` addons should:
 
 - Follow the same versioning philosophy
 - Maintain compatibility with supported core versions

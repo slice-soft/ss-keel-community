@@ -77,7 +77,7 @@ Breaking changes must be clearly documented. Versioning policy is defined in [VE
 
 ## Addon Ecosystem Governance
 
-Official addons under the `ss-keel-*` namespace must:
+Official addons under the `ss-keel-addon-*` namespace must:
 
 - Follow Keel module conventions
 - Maintain compatibility with supported core versions

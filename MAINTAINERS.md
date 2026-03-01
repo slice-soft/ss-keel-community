@@ -26,7 +26,7 @@ Additional maintainers may be appointed as projects grow.
 | Project | Maintainer |
 |---|---|
 | ss-keel-core | juancadev-io |
-| ss-keel-cli | juancadev-io |
+| keel | juancadev-io |
 | ss-keel-landing | juancadev-io |
 | ss-keel-docs | juancadev-io |
 | ss-bootstrap-python-iot | juancadev-io |

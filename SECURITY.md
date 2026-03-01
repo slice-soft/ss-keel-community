@@ -7,7 +7,7 @@ We support only the latest released version of each project. We recommend always
 | Project | Supported |
 |---|---|
 | ss-keel-core | latest ✅ |
-| ss-keel-cli | latest ✅ |
+| keel | latest ✅ |
 | ss-bootstrap-python-iot | latest ✅ |
 | ss-design-system | latest ✅ |
 

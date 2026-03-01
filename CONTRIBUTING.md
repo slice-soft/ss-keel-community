@@ -1,7 +1,6 @@
+# Contributing to SliceSoft
 
-# Contributing to Keel
-
-Thank you for your interest in contributing to Keel! This document covers the general workflow and standards that apply to all repositories in the Keel ecosystem.
+Thank you for your interest in contributing to SliceSoft projects. This document covers the general workflow and standards that apply to **all repositories in the ecosystem**.
 
 For repository-specific setup and requirements, refer to the `CONTRIBUTING.md` in each repo.
 
@@ -43,7 +42,7 @@ You don't need to write code to contribute:
 2. **Fork the repository** and create a branch from `main`
 3. **Name your branch** descriptively — `fix/parse-body-error`, `feat/graceful-shutdown`, `docs/validation-examples`
 4. **Make your changes** — keep them focused and minimal
-5. **Write or update tests** — all new functionality must have tests
+5. **Write or update tests** — all new functionality must have tests where applicable
 6. **Run the full test suite** before submitting
 7. **Open a Pull Request** against `main`
 
@@ -64,7 +63,7 @@ You don't need to write code to contribute:
 
 ## Commit Messages
 
-Keel follows **Conventional Commits** to support automated semantic versioning and auto-generated changelogs.
+SliceSoft follows **Conventional Commits** to support automated semantic versioning and auto-generated changelogs.
 
 ### Format
 
@@ -75,12 +74,12 @@ Keel follows **Conventional Commits** to support automated semantic versioning a
 ### Examples
 
 ```
-feat(config): add GetEnvUint helper
-fix(parser): handle nil body in ParseBody
-docs(readme): add validation examples
-test(router): add table-driven tests for route builder
-refactor(core): simplify openapi path conversion
-chore(ci): update workflow permissions
+feat: add GetEnvUint helper
+fix: handle nil body in ParseBody
+docs: add validation examples
+test: add table-driven tests for route builder
+refactor: simplify openapi path conversion
+chore: update workflow permissions
 ```
 
 ### Rules
@@ -93,35 +92,38 @@ chore(ci): update workflow permissions
 
 ### Allowed Types
 
-- `feat` — new feature
-- `fix` — bug fix
-- `docs` — documentation changes
-- `test` — test additions or modifications
-- `refactor` — code restructuring without behavior change
-- `chore` — maintenance, tooling, config
-- `ci` — CI/CD updates
-- `perf` — performance improvements
+| Type | Usage |
+|---|---|
+| `feat` | new feature |
+| `fix` | bug fix |
+| `docs` | documentation changes |
+| `test` | test additions or modifications |
+| `refactor` | code restructuring without behavior change |
+| `chore` | maintenance, tooling, config |
+| `ci` | CI/CD updates |
+| `perf` | performance improvements |
+| `build` | build system or external dependency changes |
 
 ---
 
 ## Merge Strategy
 
-Keel uses **Squash & Merge**.
+SliceSoft uses **Squash & Merge**.
 
 - The Pull Request title becomes the final commit in `main`
 - The PR title **must** follow Conventional Commits format
-- The semver label (`patch`, `minor`, `major`) must match the impact of the PR
+- The semver label (`patch`, `minor`, `major`) must match the actual impact of the PR
 
 ### PR Title Format
 
 ```
-<type>(optional-scope): high-level summary
+<type>: high-level summary
 ```
 
 Example:
 
 ```
-feat(server): implement graceful shutdown
+feat: implement graceful shutdown
 ```
 
 ---
@@ -139,4 +141,4 @@ For security vulnerabilities, do **not** open a public issue. Follow the process
 
 ---
 
-*Keel is built by [SliceSoft](https://slicesoft.dev) — Colombia 💙*
+*SliceSoft — Colombia 💙*

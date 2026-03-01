@@ -1,55 +1,40 @@
-# Keel Community
+# SliceSoft Community
 
-Keel Community is the collaborative governance and contribution hub powering the evolution of the Keel framework.
+SliceSoft Community is the central governance and contribution hub for all open source projects under **SliceSoft**.
 
-This repository defines the standards, policies, and processes that guide the development of Keel and its ecosystem.
+This repository defines the standards, policies, and processes that guide the development of every project in the ecosystem — from frameworks to infrastructure tools.
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
-The goal of this repository is to:
-
-- Establish the governance model for Keel
-- Define contribution guidelines
-- Maintain community standards and policies
+- Establish the governance model for SliceSoft
+- Define contribution guidelines for all repositories
+- Maintain community standards and code of conduct
 - Coordinate long-term roadmap decisions
 - Provide transparency in decision-making
 
-This is not a code repository.  
-This is the **organizational and strategic foundation** of the Keel ecosystem.
+This is **not** a code repository.
+It is the **organizational and strategic foundation** of the SliceSoft ecosystem.
 
 ---
 
-## 📚 What You’ll Find Here
+## Documents
 
-- **CODE_OF_CONDUCT.md** – Community behavior expectations
-- **CONTRIBUTING.md** – How to propose changes and contribute
-- **GOVERNANCE.md** – Decision-making structure and roles
-- **MAINTAINERS.md** – Active maintainers and responsibilities
-- **SECURITY.md** – Security reporting process
-- **VERSIONING.md** – Versioning and release policy
-
----
-
-## 🏗 About Keel
-
-Keel is a modular, lightweight framework designed for building scalable services with clarity and structure.
-
-It follows modern engineering principles:
-
-- Modular architecture
-- Clean separation of concerns
-- Explicit configuration
-- Conventional Commits
-- Semantic Versioning
-- Squash & Merge workflow
+| Document | Description |
+|---|---|
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | Development workflow, commit conventions, and PR guidelines |
+| [GOVERNANCE.md](./GOVERNANCE.md) | Decision-making, roles, and release process |
+| [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) | Community behavior standards |
+| [VERSIONING.md](./VERSIONING.md) | SemVer policy and breaking changes |
+| [SECURITY.md](./SECURITY.md) | How to report vulnerabilities |
+| [MAINTAINERS.md](./MAINTAINERS.md) | Active maintainers |
 
 ---
 
-## 🔄 How Decisions Are Made
+## How decisions are made
 
-Major changes to Keel must follow the governance process described in `GOVERNANCE.md`.
+Major changes to any SliceSoft project follow the governance process described in `GOVERNANCE.md`.
 
 Proposals may include:
 
@@ -60,11 +45,9 @@ Proposals may include:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions from developers of all experience levels.
-
-Before contributing:
+Before contributing to any SliceSoft project:
 
 1. Read `CONTRIBUTING.md`
 2. Review the governance model
@@ -73,22 +56,17 @@ Before contributing:
 
 ---
 
-## 🔐 Security
+## Security
 
-If you discover a vulnerability, please follow the responsible disclosure process described in `SECURITY.md`.
-
----
-
-## 📜 License
-
-This repository follows the same license as the core Keel project.
+If you discover a vulnerability in any SliceSoft project, follow the responsible disclosure process described in `SECURITY.md`.
 
 ---
 
-## 🌍 Organization
+## License
 
-Keel is developed and maintained under the SliceSoft organization.
+MIT. Each repository includes its own license file.
 
-Building modular systems.  
-Assembling scalable solutions.  
-Innovating with structure.
+---
+
+SliceSoft — Colombia 💙
+Building modular. Assembling scalable. Innovating with structure.

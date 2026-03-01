@@ -1,11 +1,12 @@
-# Keel Versioning Policy
+# Versioning Policy — SliceSoft
 
-Keel follows **Semantic Versioning (SemVer)**:
+All SliceSoft projects follow **Semantic Versioning (SemVer)**:
 
+```
 MAJOR.MINOR.PATCH
+```
 
-Example:
-1.4.2
+Example: `1.4.2`
 
 ---
 
@@ -14,11 +15,10 @@ Example:
 Incremented when:
 
 - Breaking API changes are introduced
-- Module system behavior changes
-- Dependency Injection behavior changes
-- Core lifecycle changes
+- System behavior changes in an incompatible way
+- Code changes are required in the consumer to upgrade
 
-Upgrading between major versions may require code changes.
+Upgrading between major versions may require changes to existing code.
 
 ---
 
@@ -27,11 +27,10 @@ Upgrading between major versions may require code changes.
 Incremented when:
 
 - New features are added
-- New modules or capabilities are introduced
-- Addons gain new functionality
-- Enhancements that are backward compatible
+- New capabilities or modules are introduced
+- Enhancements are backward compatible
 
-No breaking changes allowed.
+No breaking changes allowed in minor versions.
 
 ---
 
@@ -41,18 +40,8 @@ Incremented when:
 
 - Bugs are fixed
 - Internal refactors do not change behavior
-- Documentation improvements
-- Performance optimizations without API impact
-
----
-
-## Addon Alignment
-
-Official `ss-keel-addon-*` addons should:
-
-- Follow the same versioning philosophy
-- Maintain compatibility with supported core versions
-- Clearly document compatibility if version mismatch exists
+- Documentation is improved
+- Performance is optimized without API impact
 
 ---
 
@@ -61,23 +50,32 @@ Official `ss-keel-addon-*` addons should:
 Breaking changes:
 
 - Must increment MAJOR
-- Must be clearly documented
-- Must be listed in the CHANGELOG
-- Should include migration guidance
+- Must be clearly documented in the CHANGELOG
+- Should include migration guidance where possible
+
+---
+
+## Automation
+
+Releases are managed with `release-please` across all repos:
+
+- `feat:` commits increment MINOR
+- `fix:` commits increment PATCH
+- `feat!:` or `BREAKING CHANGE:` footer increments MAJOR
+
+The CI/CD system in `ss-pipeline` provides reusable workflows for the release process.
 
 ---
 
 ## Stability Commitment
 
-Keel does not currently provide Long-Term Support (LTS) versions.
+SliceSoft does not currently provide Long-Term Support (LTS) versions.
 
 Instead:
 
 - Stability is ensured through strict semantic versioning
-- Automated testing
+- Automated testing on every PR
 - Clear release notes
 - Transparent roadmap
 
----
-
-Keel prioritizes predictable evolution over rapid, unstable change.
+SliceSoft prioritizes predictable evolution over rapid, unstable change.

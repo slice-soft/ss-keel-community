@@ -1,36 +1,32 @@
-
-
-# Keel Governance Model
+# Governance Model — SliceSoft
 
 ## Overview
 
-Keel is an enterprise-ready, modular and opinionated Go application framework maintained by the SliceSoft organization.
-
-This document defines how decisions are made, how contributions are evaluated, and how the framework evolves over time.
+SliceSoft is an organization that builds open source tools focused on modularity, clarity, and automation. This document defines how decisions are made, how contributions are evaluated, and how projects in the ecosystem evolve over time.
 
 ---
 
 ## Project Ownership
 
-Keel is currently led and maintained by the Core Maintainer:
+SliceSoft is currently led and maintained by the Core Maintainer:
 
-- Juan Camilo Farfán (juancadev-io)
+- **Juan Camilo Farfán** (juancadev-io)
 
 The Core Maintainer has final decision authority over:
 
-- Architectural changes
-- Breaking changes
-- Major releases
-- Roadmap direction
-- Addon approval and ecosystem standards
+- Architectural changes across any project
+- Breaking changes and major releases
+- Ecosystem roadmap direction
+- Quality standards and conventions
+- Inclusion of new projects in the ecosystem
 
-As the project grows, additional maintainers may be appointed.
+Additional maintainers may be appointed as projects grow.
 
 ---
 
 ## Decision Making Process
 
-Keel follows a structured but pragmatic decision model.
+SliceSoft follows a structured but pragmatic decision model.
 
 ### Minor Changes
 
@@ -46,15 +42,15 @@ These may be merged after review by a maintainer.
 The following require a formal discussion before merging:
 
 - Breaking API changes
-- Dependency Injection architecture changes
-- Module system redesign
-- Core lifecycle changes
-- New official addon categories
+- Architectural changes to existing systems
+- Redesign of contracts between components
+- Core lifecycle changes in any project
+- New addon categories or projects in the ecosystem
 
 For these cases, contributors must:
 
 1. Open a discussion issue labeled `RFC`
-2. Describe motivation, proposal and impact
+2. Describe the motivation, proposal, and impact
 3. Allow community feedback
 4. Wait for maintainer approval before implementation
 
@@ -62,29 +58,30 @@ For these cases, contributors must:
 
 ## Release Process
 
-Releases are generated through automated workflows.
+Releases are generated through automated workflows using `release-please`.
 
 Each release:
 
 - Must include a CHANGELOG entry
 - Must follow Conventional Commits
-- Must pass CI checks
-- Must generate a version tag
+- Must pass all CI checks
+- Generates a version tag automatically
 
-Breaking changes must be clearly documented. Versioning policy is defined in [VERSIONING.md](./VERSIONING.md).
+Breaking changes must be clearly documented. The versioning policy is defined in [VERSIONING.md](./VERSIONING.md).
 
 ---
 
-## Addon Ecosystem Governance
+## Ecosystem Governance
 
-Official addons under the `ss-keel-addon-*` namespace must:
+Projects under the `slice-soft` organization must:
 
-- Follow Keel module conventions
-- Maintain compatibility with supported core versions
+- Follow the conventions defined in this repository
+- Use the CI/CD workflows from `ss-pipeline` where applicable
+- Use the design tokens from `ss-design-system` for web interfaces
+- Maintain the same license (MIT)
 - Include documentation and examples
-- Follow the same license (MIT)
 
-Experimental or community addons may exist but are not considered officially supported unless explicitly listed in the documentation.
+Experimental or community projects may exist but are not considered officially supported unless explicitly listed in the documentation.
 
 ---
 
@@ -92,18 +89,18 @@ Experimental or community addons may exist but are not considered officially sup
 
 All contributions must:
 
-- Follow idiomatic Go practices
-- Include tests when applicable
+- Follow idiomatic practices for the relevant language
+- Include tests where applicable
 - Maintain backward compatibility unless part of a major version
-- Avoid unnecessary reflection or magic
+- Avoid unnecessary reflection or implicit magic
 
-Keel prioritizes clarity over abstraction.
+SliceSoft prioritizes clarity over abstraction.
 
 ---
 
 ## Community Conduct
 
-All repositories in the Keel ecosystem follow the official [Code of Conduct](./CODE_OF_CONDUCT.md).
+All repositories in the SliceSoft ecosystem follow the official [Code of Conduct](./CODE_OF_CONDUCT.md).
 
 Respectful collaboration is mandatory.
 
@@ -111,8 +108,8 @@ Respectful collaboration is mandatory.
 
 ## Long-Term Vision
 
-Keel aims to become:
+SliceSoft aims to build tools that:
 
-> The standard modular enterprise application framework for Go teams.
+> Outlive the projects that use them. Code that any developer can read, maintain, and extend.
 
-Governance will evolve as the project and community grow.
+Governance will evolve as projects and the community grow.

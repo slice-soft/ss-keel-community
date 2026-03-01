@@ -1,22 +1,29 @@
-# Security Policy
+# Security Policy — SliceSoft
 
 ## Supported Versions
 
-| Version | Supported |
-|---------|-----------|
-| latest  | ✅        |
+We support only the latest released version of each project. We recommend always keeping your dependencies up to date.
 
-We support only the latest released version of Keel. We recommend always keeping your dependency up to date.
+| Project | Supported |
+|---|---|
+| ss-keel-core | latest ✅ |
+| ss-keel-cli | latest ✅ |
+| ss-bootstrap-python-iot | latest ✅ |
+| ss-design-system | latest ✅ |
+
+---
 
 ## Reporting a Vulnerability
 
 **Do not open a public GitHub issue for security vulnerabilities.**
 
-If you discover a security issue, please report it privately by emailing:
+If you discover a security issue in any SliceSoft project, please report it privately by emailing:
 
 **slicesoft@juancadev.com**
 
 Include in your report:
+
+- Affected project and version
 - Description of the vulnerability
 - Steps to reproduce
 - Potential impact
